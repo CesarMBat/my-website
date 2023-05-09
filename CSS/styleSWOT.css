@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav-item{
+    margin-left: 50px;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 1rem;
+}
+
+.section-swot{
+    margin-top: 3rem;
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+    justify-items: center;
+}
+.pswot1::first-letter{
+    color:blueviolet
+}
+.pswot2::first-letter{
+    color: rgb(76, 76, 240)
+}
+.pswot3::first-letter{
+    color: #ff9900
+}
+.pswot4::first-letter{
+    color: red
+}
+.p-swot::first-letter{
+    font-size: 3rem;
+}
+.grid-swot1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: flex-end;
+    margin-right: 7rem;
+}
+.grid-swot2{
+    grid-column: 2/2;
+    grid-row: 1/2;
+    justify-self: flex-start;
+    margin-left: 5rem;
+}
+.grid-swot3{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    justify-self: flex-end;
+
+}
+.grid-swot4{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    justify-self: flex-start;
+    margin-left: 5rem;
+}
+@media (max-width: 767px) {
+    .section-swot{
+        display: block;
+    }
+    .grid-swot1, .grid-swot2, .grid-swot3, .grid-swot4{
+        margin: 1rem;
+    }
+}

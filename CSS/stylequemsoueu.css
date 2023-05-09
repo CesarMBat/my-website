@@ -4,15 +4,13 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-a:visited{
-    color: #0f0f0f;
-}
 .section{
     margin-top: 80px;
     height: 80vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 50% 50%;
+    align-content: space-around;
 }
 .container-left{
     grid-column: 1/2;
@@ -21,14 +19,15 @@ a:visited{
     grid-column: 2/2;
     text-align: center;
     justify-items: center;
-
+    justify-self: center;
+    margin-right: 2rem;
 }
-@media (max-width:1196px){
-    .section{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.acad{
+    text-align: justify;
+}
+.eu{
+    justify-self: center;
+    margin-left: 50px;
 }
 .cesar{
     width: 540px;
@@ -36,10 +35,59 @@ a:visited{
     margin: 00px 80px 80px;
     border-radius: 2rem;
 }
+.etesp{
+    width: 540px;
+    height: 520px;
+    margin: 00px 80px 80px;
+    border-radius: 2rem;
+}
+.bbb{
+    color: blue;
+
+}
 .nav-item{
     margin-left: 50px;
     text-decoration: none;
     margin-right: 50px;
-    color: blue;
     font-size: 1rem;
+}
+.section-skills{
+    margin-top: 3rem;
+}
+h2{
+    text-align: center;
+}
+.div-skills{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:1196px){
+    .section{
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-mobile-index{
+        position: fixed;
+    }
+    .cesar{
+        width: 340px;
+        height: 300px;
+        margin: 00px 80px 80px;
+        border-radius: 2rem;
+    }
+    .container-left{
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+    .acad{
+        text-align: start;
+    }
+    .etesp{
+        width: 340px;
+        height: 300px;
+        margin: 00px 80px 80px;
+        border-radius: 2rem;
+    }
 }
